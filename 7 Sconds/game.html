@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Question Game</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="hud">
+            <div class="flex-column flex-center">
+                <h1> 7 SECONDS</h1>
+                <h2>Remember this question. Get the right answers for the priors one!</h2>
+                <div id="questionArea"></div>
+                <div id="answerOptions" class="answerOptions">
+                    <button id="option1"></button>
+                    <button id="option2"></button>
+                </div>
+                <div id="timerDisplay"></div>
+                <div id="scoreDisplay">Score: 0</div>
+                <div id="questionCountDisplay">Question 0/10</div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
