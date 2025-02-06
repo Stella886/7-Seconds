@@ -5,7 +5,7 @@ let finalScore = document.querySelector('#finalScore');
 let mostRecentScore = localStorage.getItem('mostRecentScore');
 
 // Attempt to retrieve the high scores from local storage
-let highScores = JSON.parse(localStorage.getItem('highScores'));
+let highScores = JSON.parse(localStorage.getItem('highScores')) || [];
 
 //set up the maximum numbers of high score to save
 let maxHighScore = 5;
@@ -19,7 +19,7 @@ username.addEventListener('keyup', () => {
 })
 
 // Function to handle saving the high score
-saveHighScore = e => {
+function saveHighScore (e) {
     e.preventDefault();
 
     // Create a score object with the user's name and score
